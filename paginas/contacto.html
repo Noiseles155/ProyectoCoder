@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- FontAwesome para iconos del footer: -->
+    <script src="https://kit.fontawesome.com/e86e9168ec.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="menu__nav">
+            <ul>
+                <div class="nombre__pag">
+                    <h1>MovieTime!</h1>
+                </div>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./paginas/peliculas.html" target="_blank">Peliculas</a></li>
+                <li><a href="./paginas/series.html">Series</a></li>
+                <li><a href="./paginas/contacto.html">Contacto</a></li>
+                <li><a href="./paginas/nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="enviar.php" class="form">
+            <div class="form__container">
+                <h2>Contactanos</h2>
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" required> 
+
+                <label for="Contraseña">Introduzca su contraseña</label>
+                <input type="password" id="pass" placeholder="Ingrese su contraseña" required>
+
+                <label for="Email">Ingrese su email</label>
+                <input type="mail" id="mail" placeholder="Ingrese su Correo" required>
+
+                <label for="comentarios">Motivo de contacto:</label>
+                <textarea name="" id="comentarios" cols="30" rows="3"></textarea>
+
+                <input type="submit" value="Enviar ahora" class="boton__cont">
+                <input type="reset" value="Borrar todo" class="boton__cont">
+            </div>
+        </form>
+    </main>
+    
+
+
+    <footer class="footer__container">
+        <div class="redes__footer">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-facebook"></a></li>
+                <li><a href="https://www.instagram.com/?hl=es" target="_blank" class="fa-brands fa-instagram"></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank" class="fa-brands fa-youtube"></a></li>
+            </ul>
+        </div>
+        <div class="copy">
+            &copy;MovieTime
+        </div>
+    </footer>
+</body>
+</html>
