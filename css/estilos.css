@@ -19,7 +19,9 @@ body{
     background: var(--fondo);
     font-family: 'Open Sans', sans-serif;
 }
+
 /* reutilizable */
+
 .container{
     width: 90%;
     margin: auto;
@@ -67,15 +69,18 @@ header nav a.active {
     display: flex;
     align-items: flex-end;
 }
+
 .fondomain .container{
     margin: 0 auto;
     margin-bottom: 6rem;
 }
+
 .fondomain .titulo{
     font-weight: 400;
     font-size: 3rem;
     margin-bottom: 1.2rem;
 }
+
 .fondomain .descripcion{
     font-weight: normal;
     font-size: 1.2rem;
@@ -83,6 +88,7 @@ header nav a.active {
     max-width: 50%;
     margin-bottom: 2rem;
 }
+
 .fondomain .boton{
     background: rgba(0, 0, 0, 0.6);
     border: none;
@@ -94,10 +100,12 @@ header nav a.active {
     transition: .3s ease all;
     font-size: 1rem;
 }
+
 .fondomain .boton:hover{
     background:white;
     color: black;
 }
+
 .fondomain .boton i{
     margin-right: 1rem;
 }
@@ -108,22 +116,27 @@ header nav a.active {
     width: 100%;
     height: 25;
 }
+
 #galeria img:hover{
     border: 3px solid #141414;
 }
+
 #galeria .col-lg-4{
     margin: 0 !important;
     padding: 1rem;
 }
+
 #galeria .text-center h2{
     color: #a27a60;
     font-size: 3rem;
     padding-bottom: 1rem;
 }
+
 #galeria .text-center p{
     color: #aaa;
     font-size: 1rem;
 }
+
 .h2-titulos h2{
     color: #aaa;
     padding-top: 0.8rem;
@@ -140,22 +153,27 @@ header nav a.active {
     padding: 3rem;
     font-size: 1rem;
 }
+
 .box__1 a{
     padding: 1.5rem;
     text-decoration: none;
     color: #aaa;
 }
+
 .box__1 a i{
     padding-right: 0.5rem;
 }
+
 .box__1 a:hover{
     color: white;
     font-size: 1.1rem;
     transition: all .4s;
 }
+
 .box1__right{
     display: flex;
 }
+
 .box1__left{
     display: flex;
 }
@@ -199,6 +217,21 @@ header nav a.active {
     }
     .box__1 a{
         padding: 1rem;
+    }
+    .box1__right{
+        flex-direction: column;
+    }
+    .box1__left{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:576px){
+    .box__1{
+        justify-content: space-evenly;
+    }
+    .box__1 a{
+        padding: 0.7rem;
     }
     .box1__right{
         flex-direction: column;

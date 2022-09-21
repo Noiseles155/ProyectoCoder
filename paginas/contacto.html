@@ -5,66 +5,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <!-- FontAwesome para iconos del footer: -->
-    <script src="https://kit.fontawesome.com/e86e9168ec.js" crossorigin="anonymous"></script>
-    <!-- Google Fonts -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Google fonts bebas neue y Open sans-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e86e9168ec.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
-        <nav class="menu__nav">
-            <ul>
-                <div class="nombre__pag">
-                    <h1>MovieTime!</h1>
-                </div>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./paginas/peliculas.html" target="_blank">Peliculas</a></li>
-                <li><a href="./paginas/series.html">Series</a></li>
-                <li><a href="./paginas/contacto.html">Contacto</a></li>
-                <li><a href="./paginas/nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">movietime</h1>
+            <nav>
+                <a class="active" href="./index.html">inicio</a>
+                <a href="./paginas/peliculas.html">Peliculas</a>
+                <a href="./paginas/series.html">Estrenos</a>
+                <a href="./paginas/contacto.html">Contacto</a>
+                <a href="./paginas/nosotros.html">Nosotros</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <form action="enviar.php" class="form">
-            <div class="form__container">
-                <h2>Contactanos</h2>
-                <label for="Nombre">Nombre</label>
-                <input type="text" id="nombre" placeholder="Ingrese su nombre" required> 
 
-                <label for="Contraseña">Introduzca su contraseña</label>
-                <input type="password" id="pass" placeholder="Ingrese su contraseña" required>
-
-                <label for="Email">Ingrese su email</label>
-                <input type="mail" id="mail" placeholder="Ingrese su Correo" required>
-
-                <label for="comentarios">Motivo de contacto:</label>
-                <textarea name="" id="comentarios" cols="30" rows="3"></textarea>
-
-                <input type="submit" value="Enviar ahora" class="boton__cont">
-                <input type="reset" value="Borrar todo" class="boton__cont">
+    <div class="container">
+        <main class="mb-4">
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center text-danger my-4">Contactanos</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5 text-white">¿Tiene usted alguna pregunta? Por favor, no dude en contactarnos directamente. Nuestro equipo le responderá dentro de
+                a matter of hours to help you.</p>
+        
+            <div class="row">
+        
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control mb-2">
+                                    <label for="name" class="text-danger">Nombre</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                            <!--Grid column-->
+                            <div class="col-md-6 mb-4">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control mb-2">
+                                    <label for="email" class="text-danger">Email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+        
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12 mb-4">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control mb-2">
+                                    <label for="subject" class="text-danger">Motivo</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                        <!--Grid row-->
+                        <div class="row">
+        
+                            <!--Grid column-->
+                            <div class="col-md-12 mb-4">
+        
+                                <div class="md-form text-danger">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea mb-2"></textarea>
+                                    <label for="message">Escriba su mensaje</label>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <!--Grid row-->
+        
+                    </form>
+        
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-danger" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-md-3 text-center text-white">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Buenos Aires, Argentina</p>
+                        </li>
+        
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+54 011 76945098</p>
+                        </li>
+        
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>contacto@movietime.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
             </div>
-        </form>
-    </main>
-    
+        
+        </main>
+    </div>
 
-
-    <footer class="footer__container">
-        <div class="redes__footer">
-            <ul>
-                <li><a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-facebook"></a></li>
-                <li><a href="https://www.instagram.com/?hl=es" target="_blank" class="fa-brands fa-instagram"></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank" class="fa-brands fa-youtube"></a></li>
-            </ul>
-        </div>
-        <div class="copy">
-            &copy;MovieTime
-        </div>
-    </footer>
+    <footer>
+        <div class="footer__container">
+  
+          <div class="box__1">
+              <div class="box1__left">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+              </div>
+              <div class="box1__right">
+                <a href="">Terminos</a>
+                <a href="">Privacidad</a>
+                <a href="">Dispositivos</a>
+                <a href="">Ayuda</a>
+              </div>
+  
+          </div>
+          <div class="box__2">
+            <p>&copy;Movietime, Todos los derechos reservados.</p>
+          </div>
+      </footer>
 </body>
 </html>
