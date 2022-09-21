@@ -289,6 +289,13 @@ header nav a.active {
     }
 }
 
+/* Section 1 */
+@media screen and (max-width:768px){
+    #galeria .text-center h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
 
 /* Footer */
 
