@@ -23,11 +23,11 @@ body{
 /* reutilizables */
 
 .lineaDiv{
-    border-top: 1px solid #aaa;
+    border-top: 1px solid rgb(122, 122, 122);
     height: 2px;
     max-width: 60%;
     padding: 0;
-    margin: 2rem auto 4rem auto;
+    margin: 5rem auto 4rem auto;
 }
 
 .container{
@@ -121,10 +121,22 @@ header nav a.active {
 }
 
 /* Section 1 */
+#galeria .text-center h2{
+    color: var(--rojo);
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+#galeria .text-center p{
+    color: #aaa;
+    font-size: 1rem;
+}
 
 #galeria img{
     width: 100%;
-    height: 25;
 }
 
 #galeria img:hover{
@@ -136,21 +148,13 @@ header nav a.active {
     padding: 1rem;
 }
 
-#galeria .text-center h2{
-    color: #a27a60;
-    font-size: 3rem;
-    padding-bottom: 1rem;
-}
-
-#galeria .text-center p{
-    color: #aaa;
-    font-size: 1rem;
-}
 
 .h2-titulos h2{
+    font-size: 1.1rem;
     color: #aaa;
     padding-top: 0.8rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 
@@ -158,50 +162,37 @@ header nav a.active {
 
 
 /* SECTION 2 TRAILER DRAGON BALL */
-#sectionTrailer{
-    margin: 5rem auto;
-}
-
-.trailer__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.titulo__sec2{
+.section__titulo h2{
+    font-size: 1.5rem;
+    padding-bottom: 4rem;
     color: white;
-    padding-bottom: 2rem;
+    text-align: center;
 }
 
-.titulo__sec2 i{
+.section__titulo h2 i{
     color: crimson;
     padding-right: 1rem;
 }
 
-.desc__trailer{
+.section__titulo h3{
     font-size: 1.5rem;
-    color: #aaa;
-    padding-left: 2rem;
-}
-
-.desc__trailer h3{
+    text-align: center;
     color: white;
-    padding-bottom: 2rem;
-}
-.vid__trailer{
-    width: 80rem;
-    height: 25rem;
-}
-.vid__trailer iframe{
-    width: 100%;
-    height: 100%;
+    padding-bottom: 1rem;
 }
 
-
-
-
-
+.section__titulo h3 i{
+    color: green;
+    padding-right: 1rem;
+}
+.trailer__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trailer__container video{
+    width: 80%;
+}
 
 /* FOOTER */
 .box__1{
@@ -255,11 +246,6 @@ header nav a.active {
 
 
 
-
-
-
-
-
 /* Media queries */
 
 /* NAV */
@@ -285,54 +271,6 @@ header nav a.active {
 }
 
 /* Section Trailer */
-@media screen and (max-width:996px){
-    .titulo__sec2{
-        text-align: center;
-        font-size: 1rem;
-    }
-    
-    .trailer__container{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--fondo);
-    }
-
-    .vid__trailer{
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .vid__trailer iframe{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .desc__trailer{
-        font-size: 1.2rem;
-        color: #aaa;
-        padding-left: 2rem;
-        text-align: center;
-    }
-
-    .desc__trailer h3{
-        text-align: center;
-        font-size: 1.5rem;
-        margin-top: 1rem;
-    }
-}
-
-@media screen and (max-width:768px){
-    .vid__trailer{
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .vid__trailer iframe{
-        width: 100%;
-        height: 100%;
-    }
-}
 
 /* Footer */
 
