@@ -109,7 +109,7 @@ header nav a.active {
     height: 25;
 }
 #galeria img:hover{
-    border: 5px solid #141414;
+    border: 3px solid #141414;
 }
 #galeria .col-lg-4{
     margin: 0 !important;
@@ -127,7 +127,46 @@ header nav a.active {
 .h2-titulos h2{
     color: #aaa;
     padding-top: 0.8rem;
+    text-align: center;
 }
+
+
+
+/* Footer */
+
+.box__1{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    font-size: 1rem;
+}
+.box__1 a{
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #aaa;
+}
+.box__1 a i{
+    padding-right: 0.5rem;
+}
+.box__1 a:hover{
+    color: white;
+    font-size: 1.1rem;
+    transition: all .4s;
+}
+.box1__right{
+    display: flex;
+}
+.box1__left{
+    display: flex;
+}
+
+.box__2{
+    text-align: center;
+    color: #aaa;
+    font-size: 1rem;
+}
+
+
 /* Media queries */
 
 /* NAV */
@@ -152,4 +191,19 @@ header nav a.active {
     }
 }
 
-/* Section 1 */
+/* Footer */
+
+@media screen and (max-width:992px){
+    .box__1{
+        justify-content: space-evenly;
+    }
+    .box__1 a{
+        padding: 1rem;
+    }
+    .box1__right{
+        flex-direction: column;
+    }
+    .box1__left{
+        flex-direction: column;
+    }
+}
