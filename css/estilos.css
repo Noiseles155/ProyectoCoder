@@ -78,7 +78,8 @@ header nav a.active {
     font-size: 1.2rem;
     min-height: 40rem;
     color: white;
-    background:url(../imagenes/fondoHeader/main-fondo.jpg);
+    background:linear-gradient(rgba(0,0,0,.3) 0%, rgba(0,0,0,.3) 100%), 
+    url(../imagenes/fondoHeader/main-fondo.jpg);
     background-position: top center;
     background-size: cover;
     margin-bottom: 3rem;
@@ -126,6 +127,9 @@ header nav a.active {
     margin-right: 1rem;
 }
 
+
+
+
 /* Section 1 */
 #galeria .text-center h2{
     color: white;
@@ -136,19 +140,19 @@ header nav a.active {
 }
 
 #galeria img{
-    width: 100%;
+    width: 100%;    
 }
 
 #galeria img:hover{
     border: 3px solid #141414;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 #galeria .col-lg-4{
     margin: 0 !important;
     padding: 1rem;
 }
-
 
 .h2-titulos h2{
     font-size: 1.1rem;
@@ -178,7 +182,7 @@ header nav a.active {
 
 .descripcion__trailer h3{
     font-size: 1.5rem;
-    text-align: center;
+    text-align: start;
     color: white;
     padding-bottom: 1rem;
     padding-top: 2rem;
@@ -188,22 +192,60 @@ header nav a.active {
     color: green;
     padding-right: 1rem;
 }
+
 .descripcion__trailer p{
     color: #aaa;
     font-size: 1rem;
-    text-align: center;
+    text-align: start;
+    max-width: 50%;
 }
+
 .trailer__container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .trailer__container video{
     width: 100%;
 }
+
 .trailer__container video:hover{
     cursor: pointer;
 }
+
+.boton{
+    display: flex;
+    justify-content: start;
+    margin-top: 3rem;
+}
+
+.boton__trailer{
+    text-align: center;
+    background: rgba(0, 0, 0, .3);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1rem;
+}
+
+.boton__trailer a{
+    text-decoration: none;
+}
+
+.boton__trailer i{
+    padding-right: 1rem;
+}
+
+.boton__trailer:hover{
+    background:white;
+    color: black;
+}
+
+
 
 /* FOOTER */
 .box__1{
@@ -282,6 +324,19 @@ header nav a.active {
 }
 
 /* Section Trailer */
+@media screen and (max-width:768px){
+    .descripcion__trailer h3{
+        text-align: center;
+    }
+    .descripcion__trailer p{
+        text-align: center;
+        max-width: 100%;
+    }
+    .boton{
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width:992px){
     .trailer__titulo h2{
         text-align: center;
