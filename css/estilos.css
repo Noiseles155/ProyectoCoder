@@ -20,12 +20,22 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-/* reutilizable */
+/* reutilizables */
+
+.lineaDiv{
+    border-top: 1px solid #aaa;
+    height: 2px;
+    max-width: 60%;
+    padding: 0;
+    margin: 2rem auto 4rem auto;
+}
 
 .container{
     width: 90%;
     margin: auto;
 }
+
+
 
 /* NAV */
 header{
@@ -145,8 +155,51 @@ header nav a.active {
 
 
 
-/* Footer */
 
+
+/* SECTION 2 TRAILER DRAGON BALL */
+#sectionTrailer{
+    margin: 5rem auto;
+}
+
+.trailer__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.titulo__sec2{
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.titulo__sec2 i{
+    color: crimson;
+    padding-right: 1rem;
+}
+
+.desc__trailer{
+    font-size: 1.5rem;
+    color: #aaa;
+    padding-left: 2rem;
+}
+
+.desc__trailer h3{
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.vid__trailer{
+    height: 100%;
+}
+
+
+
+
+
+
+/* FOOTER */
 .box__1{
     display: flex;
     justify-content: space-between;
@@ -183,6 +236,24 @@ header nav a.active {
     color: #aaa;
     font-size: 1rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Media queries */
