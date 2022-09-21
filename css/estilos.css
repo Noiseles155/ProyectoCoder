@@ -214,7 +214,7 @@ header nav a.active {
     cursor: pointer;
 }
 
-.boton{
+.boton__trailerContainer{
     display: flex;
     justify-content: start;
     margin-top: 3rem;
