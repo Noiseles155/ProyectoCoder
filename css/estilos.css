@@ -126,7 +126,7 @@ header nav a.active {
 }
 
 .fondomain .boton i{
-    margin-right: 1rem;
+    margin: 1rem;
 }
 
 
@@ -135,10 +135,13 @@ header nav a.active {
 /* Section 1 */
 #galeria .text-center h2{
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-bottom: 1rem;
-    text-transform: uppercase;
     text-align: start;
+}
+#galeria .text-center h2 i{
+    color: goldenrod;
+    padding-right: 0.5rem;
 }
 
 #galeria img{
@@ -325,6 +328,14 @@ header nav a.active {
     }
 }
 
+/* Section 1 */
+@media screen and (max-width:768px){
+    #galeria .text-center h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
 /* Section Trailer */
 @media screen and (max-width:768px){
     .descripcion__trailer h3{
@@ -346,13 +357,6 @@ header nav a.active {
     }
 }
 
-/* Section 1 */
-@media screen and (max-width:768px){
-    #galeria .text-center h2{
-        text-align: center;
-        font-size: 1.5rem;
-    }
-}
 
 /* Footer */
 
