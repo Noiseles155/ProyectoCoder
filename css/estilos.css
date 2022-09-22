@@ -54,6 +54,7 @@ header .logo a{
     color: var(--rojo);
     font-size: 3rem;
     text-decoration: none;
+    text-align: center;
 }
 
 header .logo a:hover{
@@ -64,7 +65,8 @@ header .logo a:hover{
 header nav a{
     color: #aaa;
     text-decoration: none;
-    margin-right: 1rem;
+    margin: 0 0.5rem;
+    text-align: center;
 }
 
 header nav a:hover,
@@ -177,7 +179,7 @@ header nav a.active {
 
 .trailer__titulo h2 i{
     color: crimson;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
 .descripcion__trailer h3{
@@ -190,7 +192,7 @@ header nav a.active {
 
 .descripcion__trailer h3 i{
     color: green;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
 .descripcion__trailer p{
