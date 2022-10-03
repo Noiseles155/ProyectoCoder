@@ -1,0 +1,325 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Open Sans', sans-serif;
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rojo: red;
+  --fondo: #141414;
+}
+
+body {
+  background: var(--fondo);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Reutilizables */
+.lineaDiv {
+  border-top: 1px solid rgb(122, 122, 122);
+  height: 2px;
+  max-width: 60%;
+  padding: 0;
+  margin: 3rem auto 1rem auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* NAV */
+header {
+  padding: 1rem 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo a {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 3rem;
+  text-decoration: none;
+  text-align: center;
+}
+header .container .logo a:hover {
+  color: #aaa;
+  transition: all 0.5s;
+}
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  text-align: center;
+}
+header nav a:hover {
+  color: white;
+}
+header nav a.active {
+  color: white;
+}
+
+/* MAIN */
+.fondomain {
+  font-size: 1.2rem;
+  min-height: 40rem;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../imagenes/fondoHeader/main-fondo.jpg);
+  background-position: top center;
+  background-size: cover;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: flex-end;
+}
+.fondomain .container {
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.fondomain .titulo {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+.fondomain .descripcion {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  max-width: 50%;
+  margin-bottom: 2rem;
+}
+.fondomain .boton {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  color: white;
+  margin: 1rem;
+  margin-left: 0;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1rem;
+}
+.fondomain .boton:hover {
+  background: white;
+  color: black;
+}
+.fondomain .boton i {
+  margin-right: 1rem;
+}
+
+/* SECTION 1 */
+#galeria .text-center h2 {
+  color: white;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  text-align: start;
+}
+#galeria .text-center h2 i {
+  color: goldenrod;
+  padding-right: 0.5rem;
+}
+#galeria img {
+  width: 100%;
+}
+#galeria img:hover {
+  border: 3px solid #141414;
+  cursor: pointer;
+  opacity: 0.8;
+}
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 1rem;
+}
+#galeria .h2-titulos h2 {
+  font-size: 1.1rem;
+  color: #aaa;
+  padding-top: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* SECTION 2 TRAILER DRAGON BALL */
+.trailer__titulo h2 {
+  font-size: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  color: white;
+  text-align: start;
+}
+.trailer__titulo h2 i {
+  color: crimson;
+  padding-right: 0.5rem;
+}
+
+.descripcion__trailer h3 {
+  font-size: 1.5rem;
+  text-align: start;
+  color: white;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+.descripcion__trailer h3 i {
+  color: green;
+  padding-right: 0.5rem;
+}
+.descripcion__trailer p {
+  color: #aaa;
+  font-size: 1rem;
+  text-align: start;
+  max-width: 50%;
+}
+
+.trailer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trailer__container video {
+  width: 100%;
+}
+.trailer__container video:hover {
+  cursor: pointer;
+}
+
+.boton__trailerContainer {
+  display: flex;
+  justify-content: start;
+  margin-top: 3rem;
+}
+.boton__trailerContainer .boton__trailer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1rem;
+}
+.boton__trailerContainer .boton__trailer a {
+  color: white;
+  text-decoration: none;
+  text-shadow: none;
+}
+.boton__trailerContainer .boton__trailer a:hover {
+  color: black;
+}
+.boton__trailerContainer .boton__trailer i {
+  padding-right: 1rem;
+}
+.boton__trailerContainer .boton__trailer:hover {
+  background: white;
+  color: black;
+}
+
+/* FOOTER */
+.box__1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  font-size: 1rem;
+}
+.box__1 a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #aaa;
+}
+.box__1 a i {
+  padding-right: 0.5rem;
+}
+.box__1 a:hover {
+  color: white;
+}
+.box__1 .box1__left {
+  display: flex;
+}
+.box__1 .box1__right {
+  display: flex;
+}
+
+.box__2 {
+  text-align: center;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+/* NAV */
+@media screen and (max-width: 768px) {
+  header .logo {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+  }
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fondomain .descripcion {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}
+/* Section 1 */
+@media screen and (max-width: 768px) {
+  #galeria .text-center h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+/* Section Trailer */
+@media screen and (max-width: 768px) {
+  .descripcion__trailer h3 {
+    text-align: center;
+  }
+  .descripcion__trailer p {
+    text-align: center;
+    max-width: 100%;
+  }
+  .boton__trailerContainer {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .trailer__titulo h2 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+/* FOOTER */
+@media screen and (max-width: 992px) {
+  .box__1 {
+    justify-content: space-evenly;
+  }
+  .box__1 a {
+    padding: 1rem;
+  }
+  .box__1 .box1__right {
+    flex-direction: column;
+  }
+  .box__1 .box1__left {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .box__1 {
+    justify-content: space-evenly;
+  }
+  .box__1 a {
+    padding: 0.7rem;
+  }
+  .box__1 .box1__right {
+    flex-direction: column;
+  }
+  .box__1 .box1__left {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
