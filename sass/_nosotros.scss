@@ -1,0 +1,29 @@
+main{
+    & .h1__nosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & h1{
+            text-align: center;
+            color: white;
+            margin-top: 2rem;
+        }
+    }
+    & .desc__nosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10rem;
+        & p{
+            font-size: 1.5rem;
+            margin-top: 5rem;
+            color: white;
+            text-align: center;
+        }
+    }
+    & .boton__nosotros{
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+}
