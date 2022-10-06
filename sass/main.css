@@ -146,6 +146,12 @@ main .boton__nosotros {
     font-size: 1rem;
   }
 }
+main .titulo__unirse h2 {
+  text-align: center;
+  color: white;
+  margin: 4rem 0;
+}
+
 :root {
   --rojo: red;
   --fondo: #141414;

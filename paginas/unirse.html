@@ -4,11 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peliculas</title>
-    <meta name="description" content="Visualiza todas las peliculas y series del momento de manera GRATUITA">
+    <title>Moviedata | Ultimas novedades en peliculas y series</title>
+    <meta name="description" content="Enterate de las ultimas novedades en peliculas y series!">
     <meta name="keyword" content="peliculas, series, streaming, novedades">
+    <link rel="shortcut icon" href="./imagenes/shortcut-icon/shortcut-icon.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../sass/main.css">
+    <!-- Google fonts bebas neue y Open sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e86e9168ec.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <a href="./index.html">moviedata</a>
+          </div>
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a class="active" href="./paginas/unirse.html">Unite a nosotros</a>
+                <a href="./estrenos.html">Estrenos</a>
+                <a href="./contacto.html">Contacto</a>
+                <a href="./nosotros.html">Sobre nosotros</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="titulo__unirse">
+            <h2>Unite para recibir notificaciones de los proximos estrenos</h2>
+        </div>
+        <div class="container">
+            <form>
+                <div class="row mb-3 text-danger">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3 text-danger">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <fieldset class="row mb-3 text-danger mt-5">
+                  <legend class="col-form-label col-sm-2 pt-0"></legend>
+                  <div class="col-sm-10">
+                    <div class="form-check text-white">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Recibir notificaciones
+                      </label>
+                    </div>
+                    <div class="form-check text-white">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Enviar noticias a email
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                <div class="row mb-3">
+                  <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check text-white">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Acepto los terminos
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer__container">
+  
+          <div class="box__1">
+              <div class="box1__left">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+              </div>
+  
+              <div class="box1__right">
+                <a href="">Terminos</a>
+                <a href="">Privacidad</a>
+                <a href="">Dispositivos</a>
+                <a href="">Ayuda</a>
+              </div>
+          </div>
+          
+          <div class="box__2">
+            <p>&copy;Moviedata, Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     
 </body>
 </html>
