@@ -4,11 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrenos</title>
-    <meta name="description" content="Visualiza todas las peliculas y series del momento de manera GRATUITA">
+    <title>Moviedata | Ultimas novedades en peliculas y series</title>
+    <meta name="description" content="Enterate de las ultimas novedades en peliculas y series!">
     <meta name="keyword" content="peliculas, series, streaming, novedades">
+    <link rel="shortcut icon" href="./imagenes/shortcut-icon/shortcut-icon.png">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../sass/main.css">
+    <!-- Google fonts bebas neue y Open sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e86e9168ec.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <a href="../index.html">moviedata</a>
+          </div>
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="../paginas/unirse.html">Unite a nosotros</a>
+                <a class="active" href="./paginas/estrenos.html">Estrenos</a>
+                <a href="../paginas/contacto.html">Contacto</a>
+                <a href="../paginas/nosotros.html">Sobre nosotros</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="fondomain__estrenos">
+            <div class="container">
+                <h2 class="titulo">La bestia</h2>
+                <p class="descripcion">El Doctor Nate Samuels, que se ha quedado viudo recientemente, regresa a Sudáfrica, lugar en el que conoció a su mujer, para visitar una reserva de animales con sus hijas. Pero lo que empieza siendo un viaje curativo se convierte en una lucha por la supervivencia cuando un león que ha escapado de unos cazadores furtivos empieza a seguirles.</p>
+                <button role="button" class="boton"><i class="fa-solid fa-info"></i>Mas informacion</button>
+                <button role="button" class="boton"><i class="fa-solid fa-video"></i>Ver trailer</button>
+            </div>
+        </div>
+    </main>
+    <!-- CARTAS-->
+    <section id="cartas__estreno">    
+        <div class="titulo__cartas">
+            <h2>Tambien te puede interesar</h2>
+        </div>
+        <div class="container">
+            <div class="carta">
+                <img src="../imagenes/cartas-img/hocusPocus2.jpg" alt="">
+                <h3>Hocus Pocus</h3>
+                <p>Han pasado 29 años desde que alguien encendió la Vela de la Llama Negra y resucitó a las hermanas Sanderson del siglo XVII, y ahora buscan venganza.</p>
+                <a href="#">Ver trailer</a>
+            </div>
+            <div class="carta">
+                <img src="../imagenes/cartas-img/vertigo.jpg" alt="">
+                <h3>Vertigo</h3>
+                <p>Para las mejores amigas Becky y Hunter, la vida trata de superar tus miedos y empujar tus límites. Sin embargo, después de subir hasta la cima de una torre de comunicaciones abandonada, se encuentran atrapadas y sin forma de bajar.</p>
+                <a href="#">Ver trailer</a>
+            </div>
+            <div class="carta">
+                <img src="../imagenes/cartas-img/lou.jpg" alt="">
+                <h3>Lou</h3>
+                <p>Una tormenta inclemente. Una niña secuestrada. Una madre desesperada. Y una misteriosa vecina que no duda en unirse a una peligrosa misión de rescate en la naturaleza.</p>
+                <a href="#">Ver trailer</a>
+            </div>
+            <div class="carta">
+                <img src="../imagenes/cartas-img/maquinaInfernal.jpg" alt="">
+                <h3>Maquina Infernal</h3>
+                <p>Bruce Cogburn, un autor controversial y solitario, sale de su escondite al recibir numerosas cartas de un fanático obsesivo.</p>
+                <a href="#">Ver trailer</a>
+            </div>
+        </div>
+    </section>
+
     
+    <footer>
+        <div class="footer__container">
+  
+          <div class="box__1">
+              <div class="box1__left">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i>Instagram</a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+              </div>
+  
+              <div class="box1__right">
+                <a href="">Terminos</a>
+                <a href="">Privacidad</a>
+                <a href="">Dispositivos</a>
+                <a href="">Ayuda</a>
+              </div>
+  
+          </div>
+          
+          <div class="box__2">
+            <p>&copy;Moviedata, Todos los derechos reservados.</p>
+          </div>
+        </div>
+  
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

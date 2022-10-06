@@ -3,16 +3,15 @@ font-family: 'Open Sans', sans-serif;
  */
 
 @import "nosotros";
+@import "estrenos";
+@import "vars";
+@import "mixin";
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root{
-    --rojo: red;
-    --fondo: #141414;
 }
 
 body{
@@ -34,8 +33,7 @@ body{
     font-size: 1rem;
     & a{
         text-decoration: none;
-        color: crimson;
-        font-family: 'Bebas Neue', cursive;
+        @include fontTitulos;
         font-size: 1.2rem;
         text-align: center;
     }
@@ -114,7 +112,7 @@ header{
         margin-bottom: 6rem;
     }
     & .titulo{
-        font-weight: 400;
+        font-weight: 500;
         font-size: 3rem;
         margin-bottom: 1.2rem;
     }

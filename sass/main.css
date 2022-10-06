@@ -29,15 +29,132 @@ main .boton__nosotros {
   margin-top: 4rem;
 }
 
+.fondomain__estrenos {
+  font-size: 1.2rem;
+  min-height: 40rem;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../imagenes/cartas-img/laBestia.jpg);
+  background-position: top center;
+  background-size: cover;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: flex-end;
+}
+.fondomain__estrenos .container {
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.fondomain__estrenos .titulo {
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+.fondomain__estrenos .descripcion {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  max-width: 50%;
+  margin-bottom: 2rem;
+}
+.fondomain__estrenos .boton {
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  color: white;
+  margin: 1rem;
+  margin-left: 0;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1rem;
+}
+.fondomain__estrenos .boton:hover {
+  background: white;
+  color: black;
+}
+.fondomain__estrenos .boton i {
+  margin-right: 1rem;
+}
+
+#cartas__estreno .titulo__cartas h2 {
+  color: crimson;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 4rem;
+  text-align: center;
+}
+#cartas__estreno .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  height: auto;
+  margin: auto;
+  margin-top: 5rem;
+}
+#cartas__estreno .container .carta {
+  background: rgba(0, 0, 0, 0.3);
+  width: 30rem;
+  height: 35rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 1rem;
+  text-align: center;
+  transition: all 0.25s;
+}
+#cartas__estreno .container .carta:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+}
+#cartas__estreno .container .carta img {
+  position: center;
+  overflow: hidden;
+  width: 30rem;
+  height: auto;
+}
+#cartas__estreno .container .carta h3 {
+  color: crimson;
+  padding-top: 1rem;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+#cartas__estreno .container .carta p {
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: white;
+}
+#cartas__estreno .container .carta a {
+  font-weight: 500;
+  text-decoration: none;
+  color: crimson;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 480px) {
+  .fondomain__estrenos .descripcion {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fondomain__estrenos .descripcion {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}
+:root {
+  --rojo: red;
+  --fondo: #141414;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --rojo: red;
-  --fondo: #141414;
 }
 
 body {
@@ -133,7 +250,7 @@ header nav a.active {
   margin-bottom: 6rem;
 }
 .fondomain .titulo {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 3rem;
   margin-bottom: 1.2rem;
 }
