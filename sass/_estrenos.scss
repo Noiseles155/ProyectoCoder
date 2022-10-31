@@ -95,7 +95,7 @@
     & .titulo__cartas{
         & h2{
             @include fontTitulos;
-            padding-top: 4rem;
+            padding-top: 2rem;
             text-align: center;
         }
     }
@@ -164,4 +164,15 @@
         max-width: 100%;
         font-size: 1rem;
      }
+}
+
+@media screen and (max-width:768px){
+    #estreno__series .series__container .serie p{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:768px){
+    #estreno__series .series__container .serie h3{
+        font-size: 1rem;
+    }
 }

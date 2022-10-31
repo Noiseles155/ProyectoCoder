@@ -14,17 +14,27 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0 10rem;
+        padding: 0 1rem;
         & p{
-            font-size: 1.5rem;
-            margin-top: 5rem;
+            font-size: 2rem;
+            margin-top: 3rem;
+            @include fontTitulos;
             color: white;
             text-align: center;
         }
     }
     & .boton__nosotros{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         margin-top: 4rem;
+    }
+}
+
+/* Media Queries */
+
+@media screen and (max-width:768px){
+    main .desc__nosotros p{
+        font-size: 1.2rem;
+        margin-top: 2rem;
     }
 }

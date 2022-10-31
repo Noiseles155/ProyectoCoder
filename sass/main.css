@@ -15,20 +15,29 @@ main .desc__nosotros {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10rem;
+  padding: 0 1rem;
 }
 main .desc__nosotros p {
-  font-size: 1.5rem;
-  margin-top: 5rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: crimson;
+  font-family: "Bebas Neue", cursive;
   color: white;
   text-align: center;
 }
 main .boton__nosotros {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 4rem;
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  main .desc__nosotros p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
 .fondomain__estrenos {
   font-size: 1.2rem;
   min-height: 40rem;
@@ -118,7 +127,7 @@ main .boton__nosotros {
 #cartas__estreno .titulo__cartas h2 {
   color: crimson;
   font-family: "Bebas Neue", cursive;
-  padding-top: 4rem;
+  padding-top: 2rem;
   text-align: center;
 }
 #cartas__estreno .container {
@@ -182,6 +191,16 @@ main .boton__nosotros {
 @media screen and (max-width: 768px) {
   .fondomain__estrenos .descripcion {
     max-width: 100%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #estreno__series .series__container .serie p {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #estreno__series .series__container .serie h3 {
     font-size: 1rem;
   }
 }
