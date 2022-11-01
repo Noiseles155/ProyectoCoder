@@ -178,9 +178,12 @@ header{
             font-size: 1.5rem;
             color: crimson;
             padding-top: 0.8rem;
-            text-align: center;
+            text-align: start;
             text-transform: uppercase;
             font-family: 'Bebas Neue', cursive;
+        }
+        p{
+            color: whitesmoke
         }
     }
 }
